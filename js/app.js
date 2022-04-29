@@ -33,7 +33,7 @@ const getWeather = async (lat, lon) =>{
 
 const setBackground = (weatherType)=>{
     // console.log(document.querySelector('section.weather').style);
-        document.querySelector('.weather').style.backgroundImage = `url('/backgrounds/${weatherType.toLowerCase()}.gif')`;
+        document.querySelector('.weather').style.backgroundImage = `url('/WeatherApp2.0/backgrounds/${weatherType.toLowerCase()}.gif')`;
         console.log(document.querySelector('.weather').style);
 }
 
