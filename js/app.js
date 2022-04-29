@@ -11,7 +11,7 @@ daysInWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', '
 const getCoords = async () =>{
 
     const city = input.value;
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${3}&appid=${apiKey}`);
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${3}&appid=${apiKey}`);
     if(response.status !== 200){
         throw new Error('cannot fetch the data');
     }
