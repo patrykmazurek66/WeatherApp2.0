@@ -15,7 +15,6 @@ body{
 section.weather{
     position: relative;
     background-color: rgb(140, 182, 192);
-    /* background-image: url('/backgrounds/rain.gif'); */
     background-position: center;
     background-size: cover;
     height: 800px;
@@ -148,9 +147,11 @@ section.weather{
 }
 
 
-@media (max-width: 500px) {
-   .weather{
-       width: 100%;
-       height: 100%;
+@media screen and (max-width: 500px) {
+    body{
+        align-items: flex-start;
+    }
+   section.weather{
+     min-height: 800px;
    }
 }
