@@ -154,7 +154,7 @@ section.weather{
     }
    section.weather{
      height: 100%;
-     min-height: 700px;
+     min-height: 800px;
 
      width: 100%;
      min-width: 375px;
