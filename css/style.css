@@ -147,14 +147,14 @@ section.weather{
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     body{
         align-items: flex-start;
         justify-content: flex-start;
     }
    section.weather{
      height: 100%;
-     min-height: 800px;
+     min-height: 700px;
 
      width: 100%;
      min-width: 375px;
