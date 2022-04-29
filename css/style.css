@@ -17,7 +17,7 @@ section.weather{
     background-color: rgb(140, 182, 192);
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 700px;
     width: 400px;
     overflow: hidden;
 }
@@ -152,6 +152,14 @@ section.weather{
         align-items: flex-start;
     }
    section.weather{
-     min-height: 800px;
+     height: 100%;
+     min-height: 700px;
+
+     width: 100%;
+     min-width: 400px;
    }
+
+
+
+
 }
