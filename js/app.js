@@ -1,5 +1,6 @@
 const apiKey = '63bf289f0a05fdfa5b1002c77f53563c'
 const input = document.querySelector('.weather input');
+const searchBtn = document.querySelector("button.search-btn");
 
 let lat;
 let lon;
@@ -93,11 +94,23 @@ input.addEventListener('keyup', (e) =>{
     }
  });
 
+ searchBtn.addEventListener('click', (e) =>{
+    input.classList.remove('err');
+        getCoords()
+    .then(data => {
+        getWeather(data[0].lat, data[0].lon)
+                .then(data => {
+                displayWeather(data);
+    })})
+    .catch(err => {
+        console.log('rejected:', err.message);
+        input.classList.add('err');
+    });
+ });
 
 
 
-
-input.value = 'wrocław'
+input.value = 'warszawa';
     getCoords()
     .then(data => {
         getWeather(data[0].lat, data[0].lon)
@@ -106,3 +119,5 @@ input.value = 'wrocław'
   
     })})
     .catch(err => console.log('rejected:', err.message));
+input.value = '';
+
